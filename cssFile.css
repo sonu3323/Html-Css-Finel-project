@@ -1,0 +1,740 @@
+*{
+  padding:0px;
+    margin:0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+}
+
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://edyoda.s3.ap-south-1.amazonaws.com/public/landing-background.png');
+    background-position: left;
+    background-size: cover;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-sizing: border-box;
+    width:100%;
+    height:77px;
+    padding:0  26px;
+    position: fixed;
+}
+
+#logo{
+padding-left:15px; 
+width:42px;
+}
+
+
+
+.dropdown-wrapper{
+    display: inline-block;
+    position: relative;
+}
+
+.dropdown
+{
+    
+  position: absolute;
+}
+
+.dropdown a{
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #ccc;
+    padding: 4px;
+    cursor: pointer;
+
+}
+
+.dropdown a:last-of-type{
+    border:0px;
+}
+
+.dropdown{
+    width: 160px;
+    display:none ;
+    width:150px;
+    background-color: white;
+    box-shadow: 0 2px 5px #ccc;
+    padding:20px;
+    border-top: 2px solid rgb(170, 210, 54);
+    position: absolute;
+    right:16px;
+}
+
+.dropdown-wrapper:hover .dropdown{
+    display: block;
+}
+
+
+.menu-item{
+    display:inline-block;
+    font-weight: 660px;
+    font-size:14px;
+    color: black;
+    margin-right:24px;
+}
+
+.menu-item i{
+    margin-left:4px;
+}
+
+
+
+
+.button{
+    background-color: rgb(170, 210, 54);
+    font-size: 12px;
+    font-weight: 600;
+    color:white;
+    padding:9px 34px;
+    text-transform: uppercase;
+    border: 0px;
+    border-radius: 4px;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+#paragraph-box {
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+#text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#text h1 {
+    width: 100%;
+    max-width: 1100px;
+    font-size: 44px;
+    font-weight: 600;
+    letter-spacing: 8.8px;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0;
+}
+
+#text p {
+    width: 100%;
+    max-width: 1100px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    color: #8b8b99;
+    text-align: center;
+    padding-top: 32px;
+}
+
+            /*section2*/
+#steps-section{
+display: grid;
+grid-template-columns: auto auto auto auto;
+height:500px;
+}
+
+.step-item i{
+    font-size:96px;
+    color:white;
+}
+
+.step-item{
+        
+        padding: 112px 48px;
+        text-align: center;
+        color: white;
+        box-sizing: border-box;
+    }
+
+.step-item h3{
+  font-weight:600;
+  font-size: 24px;
+    margin-top:24px;
+    margin-bottom:20px;
+}
+
+.step-item:hover i{
+    transform: scale(1.1, 1.1);
+    transition-duration: 0.3s;
+}
+
+.step-item p {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 1.6;
+    margin-top: 0;
+}
+
+#first-step {
+    background-color: #5acda6;
+}
+
+#second-step {
+    background-color: #91ac41;
+}
+
+#third-step {
+    background-color: #e4b476;
+}
+
+#fourth-step {
+    background-color: #f69dad;
+}
+
+
+/*section 4  */
+
+#store-section {
+    width: 100%;
+    background-color: #f7eee2;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    text-align: center;
+    
+   
+}
+
+#fresh-food-heading {
+    color: #91ac41;
+    font-size: 24px;
+    font-family: 'Caveat', cursive;
+    margin-top:140px;
+    
+}
+
+#vegun-store{
+
+font-size:45px;
+
+}
+
+#store-desc {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+    margin-bottom: 55px;
+}
+
+#store-items-wrapper {
+    width: 100%;
+    max-width: 1140px;
+    display: flex;
+    justify-content: stretch;
+    margin: 0 auto;
+}
+
+.store-item {
+    width: 25%;
+    text-align: center;
+    padding: 24px;
+}
+
+.store-item i{
+    font-size: 60px;
+    color:white;
+    background-color: #e3b375;
+    padding:40px;
+    border-radius: 100px;
+}
+
+.store-item h3{
+
+    font-size: 24px;
+    font-weight: 600;
+    margin-top:15px;
+}
+.store-item p{
+
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    color: #8b8b99;
+    margin-top:10px;
+}
+
+/*section-reviwe-store */
+
+#review-store{
+    text-align: center;
+    width: 100%;
+}
+
+#review-contener{
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.contener-item {
+    width: 25%;
+    text-align: center;
+    background-color: #f5f6fb;
+    padding: 40px 30px;
+    margin: 16px;
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+    border-bottom-right-radius: 45px;
+    transition: box-shadow 0.3s;
+}
+
+.contener-item img {
+    width: 80px;
+    margin-bottom: 25px;
+    border-radius: 50%;
+}
+
+.contener-message {
+    font-size: 14px;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    margin: 0;
+}
+
+.contener-item h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 24px;
+    margin-bottom: 0px;
+}
+
+.job-role {
+    color: #8b8b99;
+    font-size: 12px;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+
+
+
+#follow-section{
+
+    display:flex;
+    justify-content: stretch;
+}
+
+#img{
+    
+  width:100%;
+}
+
+#left{
+    width: 67%;
+    display: inline-block;
+    margin: 0;
+}
+
+#right-section {
+    width: 33.33%;
+    margin: 0;
+    display: inline-block;
+    background-image: url('https://edyoda.s3.ap-south-1.amazonaws.com/public/strawberry-white.png');
+    background-position: left;
+    background-size: cover;
+}
+
+#right-section #text-wrapper {
+    margin: 50px;
+}
+#text-wrapper h3{
+    font-size: 44px;
+    font-weight: 600;
+    margin: 0 0 8px;
+
+}
+
+#text-wrapper p{
+
+    color: #8b8b99;
+    font-size: 16px;
+    letter-spacing: 0.5;
+    line-height: 1.6;
+    margin: 0;
+}
+
+#email{
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 4px;
+    font-weight: 500;
+    background-color: white;
+    padding: 12px;
+    color: #8b8b99;
+    font-size: 16px;
+    margin-top: 60px;
+    display: block;
+}
+
+#btn{
+
+    background-color: #f69dad;
+    padding: 16px 42px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    border: 0;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 16px;
+    color:black;
+}
+
+#btn:hover{
+    color: #f69dad;
+    border: 1px solid #f69dad;
+    background-color: transparent;
+}
+
+
+/*foloowrs  */
+
+#stats-section{
+    margin-top:80px;
+    width: 100%;
+    background-color: #f6fcfa;
+    padding-top:70px;
+    padding-bottom:70px;
+}
+
+
+#stats-wrapper{
+    display:flex;
+    justify-content:space-evenly;
+    background-color: #f6fcfa;
+}
+
+.sts-h3{
+    font-size: 44px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.stats-item p{
+
+    color: #57e3b5;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    margin: 0;
+}
+
+   /*---video -swction */
+
+   #video{
+    margin-top:150px;
+    text-align: center;
+}
+  
+   #video h3 {
+    color: #8b8b99;
+    font-size: 44px;
+    font-weight: 400;
+}
+
+#line{
+    width: 96px;
+    display: inline-block;
+    height: 1px;
+    background-color: #e4b476;
+    margin-bottom: 36px;
+
+}
+
+
+#video iframe {
+    width: 100%;
+    height: 425px;
+}
+
+/*-----Address---*/
+
+#address-contener{
+    display: flex;
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    
+    justify-content: space-between;
+    padding: 100px 0
+}
+
+.contant-us{
+    color: #91ac41;
+    font-size: 24px;
+    font-family: 'Caveat', cursive;
+    margin: 0;
+    margin-top: 35px;
+}
+.address{
+    font-size: 600;
+    font-size: 44px;
+    margin: 0;
+}
+
+.address-heading{
+
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+    margin-top: 32px;
+}
+
+.address-lines {
+    font-size: 16px;
+    font-weight: 400;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+    line-height: 2;
+    margin: 0;
+}
+
+.section-description{
+    font-size: 16px;
+    font-weight: 400;
+    color: #8b8b99;
+    letter-spacing: 0.5px;
+}
+
+.input-box {
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+    color: #8b8b99;
+    border-radius: 6px;
+    border: 1px solid #e5e6ec;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+#div{
+    width:50%;
+}
+
+#form{
+    margin-left:80px;
+    width:40%;
+}
+
+#btn-submit{
+
+    font-size: 16px;
+}
+
+#btn-submit:hover{
+
+    background-color:salmon;
+
+}
+ 
+/*----Footer-----*/
+
+
+footer {
+    background-color: #232323;
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+#design{
+    font-family: 'Caveat', cursive;
+    font-size:45px;
+    color:lightpink;
+}
+
+
+
+
+/*------*/
+
+
+@media (max-width: 900px) {    
+
+    .menu-item{
+        display:none;
+    }
+    .button {
+        position: relative;
+        margin: 0px;
+    }
+
+    #text h1 {
+        font-size: 22px;
+        margin-left:-50px;
+    }
+
+    #text p{
+        font-size:10px;
+    max-width:80%;
+    margin-right:60px;        
+
+}
+
+#steps-section{
+    display: grid;
+    grid-template-columns: auto ;
+    height:500px;
+    }
+
+    .step-item{
+        
+        padding: 112px 48px;
+        text-align: center;
+        color: white;
+        box-sizing: border-box;
+    }
+
+    #store-section{
+        margin-top:500%;
+    }
+
+    #store-items-wrapper {
+       
+      
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+
+    
+    #store-section h3 {
+        font-size: 28px;
+    }
+
+    #store-items-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .store-item {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #store-desc {
+        margin-right:40px;
+        font-size: 15px;
+    }
+    .store-item p{
+        margin-right:30px;
+    }
+    #review-store {
+        padding: 16px;
+        box-sizing: border-box;
+    }
+
+    #review-store > h3 {
+       font-size: 20px; 
+    margin-right:30px;
+    }
+
+    #review-contener{
+        flex-direction: column;
+    }
+
+    .contener-item{
+        width: 100%;
+        box-sizing: border-box;
+        margin-right:20px;
+    }
+
+    .testimonial-by {
+        font-size: important 18px;
+    }
+
+    .testimonial-message{
+        font-size: 10px;
+        margin-right:40px;
+    }
+
+    #follow-section {
+        flex-direction: column;
+    }
+    
+    #right-section #text-wrapper {
+        margin: 16px;
+    }
+
+    #right-section #text-wrapper h3 {
+        font-size: 28px;
+    }
+
+    #left {
+        width: 100%;
+    }
+
+    #right-section {
+        width: 100%;
+    }
+
+    #stats-wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #stats-item {
+        width: 100%;
+    }
+
+    .sts h3{
+        flex-direction: column;
+    }
+    .seven{
+        text-align: center;
+    }
+
+    #address-contener {
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        padding: 16px;
+        padding-top: 0;
+        box-sizing: border-box;
+    }
+
+    #address-contener > div {
+        width: 100%;
+    }
+
+    #form {
+        width: 100%;
+        margin-right:70px;
+    }
+
+
+
+}
